@@ -325,7 +325,7 @@ def create_sampling_ui(model_config_map, inpainting=False):
                 with gr.Column(scale=6):
                     with gr.Accordion("Video Params", open=False):                
                         seconds_start_slider = gr.Slider(minimum=0, maximum=512, step=1, value=0, label="Video Seconds Start")
-                        seconds_total_slider = gr.Slider(minimum=0, maximum=10, step=1, value=10, label="Seconds Total", interactive=True)
+                        seconds_total_slider = gr.Slider(minimum=0, maximum=10, step=1, value=10, label="Seconds Total", interactive=False)
             with gr.Row():
                 with gr.Column(scale=4):
                     with gr.Accordion("Sampler Params", open=False):
